@@ -1,6 +1,8 @@
+# Rules inherited from root .gitignore — kept here for local clarity
 .env
 node_modules/
 
 # Copilot Orchestrator temporary files
 .orchestrator/
 .worktrees/
+
