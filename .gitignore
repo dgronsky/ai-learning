@@ -9,32 +9,31 @@
 **/.env.local
 **/.env.*.local
 
+# ── Visual Studio local state ────────────────────────────────────────────────
+# .vs/ can contain Copilot chat history with secrets — never commit
+**/.vs/
+*.rsuser
+*.suo
+*.userosscache
+*.sln.docstates
+
 # ── .NET / C# build artefacts ────────────────────────────────────────────────
 **/bin/
 **/obj/
 *.user
-*.suo
-*.userosscache
-*.sln.docstates
-.nuget/
-nupkg/
 *.nupkg
-
-# ── Visual Studio local files ────────────────────────────────────────────────
-# .vs/ can contain Copilot chat history with secrets — never commit
-.vs/
-*.rsuser
-*_i.c
-*_p.c
-*_h.h
-*.ilk
-*.meta
 *.pdb
 *.iobj
 *.ipdb
+*.ilk
+*.meta
+*_i.c
+*_p.c
+*_h.h
+.nuget/
+nupkg/
 
 # ── User secrets (dotnet user-secrets) ───────────────────────────────────────
-# %APPDATA%\Microsoft\UserSecrets\ — not in repo, but guard local copies
 **/usersecrets/
 
 # ── Node ─────────────────────────────────────────────────────────────────────
@@ -47,7 +46,6 @@ nupkg/
 *.swp
 
 # ── Runtime output ───────────────────────────────────────────────────────────
-**/summary/
 *.log
 
 # ── Copilot Orchestrator temporary files ─────────────────────────────────────

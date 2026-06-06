@@ -1,0 +1,9 @@
+# Rules inherited from root .gitignore — kept here for local clarity
+appsettings.local.json
+.env
+
+bin/
+obj/
+.vs/
+*.user
+
