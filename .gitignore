@@ -1,12 +1,55 @@
-appsettings.local.json
-.env
+# ── Sensitive config / secrets ───────────────────────────────────────────────
+# Local overrides — never commit these
+**/appsettings.local.json
+**/appsettings.local.*.json
+**/appsettings.development.json
+**/appsettings.Development.json
+**/secrets.json
 **/.env
-**/node_modules/
+**/.env.local
+**/.env.*.local
 
-bin/
-obj/
-.vs/
+# ── .NET / C# build artefacts ────────────────────────────────────────────────
+**/bin/
+**/obj/
 *.user
-# Copilot Orchestrator temporary files
+*.suo
+*.userosscache
+*.sln.docstates
+.nuget/
+nupkg/
+*.nupkg
+
+# ── Visual Studio local files ────────────────────────────────────────────────
+# .vs/ can contain Copilot chat history with secrets — never commit
+.vs/
+*.rsuser
+*_i.c
+*_p.c
+*_h.h
+*.ilk
+*.meta
+*.pdb
+*.iobj
+*.ipdb
+
+# ── User secrets (dotnet user-secrets) ───────────────────────────────────────
+# %APPDATA%\Microsoft\UserSecrets\ — not in repo, but guard local copies
+**/usersecrets/
+
+# ── Node ─────────────────────────────────────────────────────────────────────
+**/node_modules/
+**/package-lock.json
+
+# ── IDE / editor ─────────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+
+# ── Runtime output ───────────────────────────────────────────────────────────
+**/summary/
+*.log
+
+# ── Copilot Orchestrator temporary files ─────────────────────────────────────
 .orchestrator/
 .worktrees/
