@@ -1,7 +1,35 @@
-appsettings.local.json
-.env
-
-bin/
-obj/
+# ── Visual Studio local state (can contain Copilot chat history with secrets) ─
 .vs/
+
+# ── Sensitive config / secrets ───────────────────────────────────────────────
+**/appsettings.local.json
+**/appsettings.local.*.json
+**/appsettings.Development.json
+**/secrets.json
+**/.env
+**/.env.local
+**/.env.*.local
+
+# ── .NET / C# build artefacts ────────────────────────────────────────────────
+**/bin/
+**/obj/
 *.user
+*.suo
+*.nupkg
+*.pdb
+
+# ── Node ─────────────────────────────────────────────────────────────────────
+**/node_modules/
+**/package-lock.json
+
+# ── IDE / editor ─────────────────────────────────────────────────────────────
+.vscode/
+.idea/
+
+# ── Runtime output ───────────────────────────────────────────────────────────
+**/summary/
+*.log
+
+# ── Copilot Orchestrator ──────────────────────────────────────────────────────
+.orchestrator/
+.worktrees/
