@@ -1,5 +1,5 @@
 # ── Visual Studio local state (can contain Copilot chat history with secrets) ─
-.vs/
+**/.vs/
 
 # ── Sensitive config / secrets ───────────────────────────────────────────────
 **/appsettings.local.json
