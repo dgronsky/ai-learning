@@ -1,6 +1,12 @@
+appsettings.local.json
+.env
 **/.env
 **/node_modules/
 
+bin/
+obj/
+.vs/
+*.user
 # Copilot Orchestrator temporary files
 .orchestrator/
 .worktrees/
